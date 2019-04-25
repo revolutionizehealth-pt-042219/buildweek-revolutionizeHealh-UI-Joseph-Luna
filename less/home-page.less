@@ -2,8 +2,51 @@
  
      
         .main-section{
+        display: flex;
+        flex-flow:row wrap;
         width: 85%;
-        margin: 5% auto;
+        margin: 10% auto;
+
+                 .content-wrapper{
+                 display: flex;
+                 flex-flow:row wrap;
+                 justify-content: center;
+                 align-items: center;
+
+                        
+
+                        .inner-content-wrapper{
+                              width:50%;
+                              order:2;
+                              color: @jet;
+                            
+
+                              p{
+                                line-height: 1.5;
+                                font-size:1.6rem;
+                               
+                              }
+
+                        }
+
+                        .inner-content-img-wrapper{
+                                width:50%;
+                                order:1;
+
+                              img{
+                                        width: 550px;
+                                        height:550px;
+                                }
+                        }
+
+                        .inner-content-img-wrapper.reversed{
+                                order:2;
+                        }
+
+                      
+
+                   }
+
         
         }
     
