@@ -1,0 +1,55 @@
+
+.container{
+
+    .nav-wrapper{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 2% auto;
+        width:80%;
+    
+
+        .nav-logo{
+            align-content: space-around;
+            color:@lightest-blue;
+           
+        }
+
+        .top-nav{
+            width:50%;
+           
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+            color:@lightest-blue;
+            text-decoration: none;
+            font-size:2.0rem;    
+            padding: 2%;
+            margin-left: 8%
+        }
+
+        a:hover{
+            color: lighten(@lightest-blue, 100%);
+            text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7)
+        }
+
+
+        .login-link-btn {
+            background-color: @accent-purple;
+            border-radius: 10px;
+            width:85px;
+            text-align: center;
+          
+        }
+
+        .login-link-btn:hover{
+            background-color: darken(@accent-purple, 20%);
+            .drop-shadow
+        }
+
+        
+    }
+    }
+}
