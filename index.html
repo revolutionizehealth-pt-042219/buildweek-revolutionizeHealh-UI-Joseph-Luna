@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="scrolly/cssanimation.css"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Home</title>
 </head>
 <div class="container">
-
     <div class="nav-wrapper">
         <h2 class="nav-logo">REVO - Health Care</h2>
         <nav class="top-nav">
@@ -35,9 +35,9 @@
 
     <body>
         <section class="main-section">
-            <div class="content-wrapper">
+            <div class="content-wrapper" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
                 <div class="inner-content-wrapper">
-                    <h2>We have a Pulse</h2>
+                    <h2 data-scrolly-characters="sequentially" data-scrolly-down="leSpinInRight" data-scrolly-top="leSpinInLeft">We have a Pulse</h2>
                     <p>In todays econemy we must be diligent as consumers with all aspects of purchases. Shopping around
                         for a better deals from our cell phone carriers, automobiles, and even daily meals are a must to
                         keep track of expenses and budgets in check.
@@ -54,11 +54,12 @@
                 </div>
             </div>
 
-            <div class="content-wrapper">
+            <div class="content-wrapper" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
                 <div class="inner-content-wrapper reversed">
-                    <h2>Network our Network</h2>
+                    <h2 data-scrolly-characters="sequentially" data-scrolly-down="leSpinInRight" data-scrolly-top="leSpinInLeft">Network our Network</h2>
                     <p>Become a member and recieve valuable information from our network. Provide your feedback and help
-                        others save. </p>
+                        others save. 
+                    </p>
                 </div>
                 <div class="inner-content-img-wrapper reversed">
                     <img src="https://vectr.com/joeluna17/g1tk958X2u.svg?width=640&height=640&select=g1tk958X2upage0">
@@ -66,9 +67,9 @@
 
             </div>
 
-            <div class="content-wrapper">
+            <div class="content-wrapper" data-scrolly-top="blurInBottom" data-scrolly-down="blurInTop">
                 <div class="inner-content-wrapper">
-                    <h2>We Listen, Dr's Listen</h2>
+                    <h2 data-scrolly-characters="sequentially" data-scrolly-down="leSpinInRight" data-scrolly-top="leSpinInLeft">We Listen, Dr's Listen</h2>
                     <p>Our network is made up Doctors that listen our users' feedback and concerns. By comparing local
                         costs Doctors can adjust their rates to be competitive in their market, helping you save some
                         cash!
@@ -80,9 +81,8 @@
             </div>
 
         </section>
-
+        <script type="text/javascript" src="scrolly/scrolly.js"></script>
         <script src="js/index.js"></script>
-
     </body>
    
 </div>
