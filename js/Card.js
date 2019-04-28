@@ -1,9 +1,9 @@
  const teamMembers = [
     {name:"Dominic Toreuellas", position:"Web UI", cohort:"WEBPT-5",image:"https://ca.slack-edge.com/T4JUEB3ME-UFCHJST0C-g5cdca5e357a-48"},
     {name:"Ernesto Pena", position:"Web UI", cohort:"WEBPT-5",image:"https://image.shutterstock.com/image-vector/user-icon-trendy-flat-style-450w-418179856.jpg"},
-    {name:"Joseph Luna", position:"Web UI", cohort:"WEBPT-5",image:"https://image.shutterstock.com/image-vector/user-icon-trendy-flat-style-450w-418179856.jpg"},
+    {name:"Joseph Luna", position:"Web UI", cohort:"WEBPT-5",image:"https://ca.slack-edge.com/T4JUEB3ME-UFPQNAWGM-f9eca12accb9-48"},
     {name:"James Wigdor", position:"Front End ", cohort:"WEBPT-5",image:"https://image.shutterstock.com/image-vector/user-icon-trendy-flat-style-450w-418179856.jpg"},
-    {name:"Reed Turgeon", position:"Front End ", cohort:"WEBPT-5",image:"https://image.shutterstock.com/image-vector/user-icon-trendy-flat-style-450w-418179856.jpg"},
+    {name:"Reed Turgeon", position:"Front End ", cohort:"WEBPT-5",image:"https://ca.slack-edge.com/T4JUEB3ME-UCBBW0HJL-4ad9221b63c2-48"},
     {name:"Noah Stocekel", position:"BackEnd", cohort:"WEBPT-5",image:"https://image.shutterstock.com/image-vector/user-icon-trendy-flat-style-450w-418179856.jpg"},
 ];
 
@@ -36,5 +36,7 @@ class Card{
 
 
 teamMembers.forEach(member => new Card(member))
+
+//GreenSock Animation
 TweenMax.staggerFrom(".card-view",0.5,{opacity:0, y:300,rotation:360, scale:2,delay:0.2},0.2);
 
