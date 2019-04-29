@@ -1,0 +1,110 @@
+
+.container{
+
+    .nav-wrapper{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 2% auto;
+        width:80%;
+
+        @media @phone {
+            justify-content: center;
+            align-items:center;
+            width:100%;
+        }
+    
+
+        .nav-logo{
+            align-content: space-around;
+            color:@lightest-blue;
+           
+            @media @phone{
+                font-size: 3.2rem;
+                display: none;
+            }
+        }
+
+        .top-nav{
+            width:50%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            @media @phone{
+                flex-flow: column wrap;
+                width:100%;
+                margin: 2% auto;
+               
+            }
+
+            a{
+            color:@lightest-blue;
+            text-decoration: none;
+            font-size:2.0rem;    
+            padding: 2%;
+            margin-left: 8%;
+
+            @media @phone {
+                text-align: center;
+                width:100%;
+                margin:2px auto;
+                padding:5% 0;
+                border-radius: 10px;
+                background-color: @accent-purple;
+                
+            }
+        }
+
+        a:hover{
+            color: lighten(@lightest-blue, 100%);
+            text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+            @media @phone{
+                background-color: darken(@accent-purple, 20%);
+            }
+        }
+
+
+        .login-link-btn {
+            position:absolute;
+            right:0;
+            top:22px;
+            padding:10px 30px;
+            border-radius: 25px 0 0 25px;
+            border: 4px solid @accent-purple;
+            width:20%;
+            text-align: left;
+            -webkit-transition: width .5s;
+            transition: width .5s;
+
+           @media @phone{
+               position: relative;
+               padding: 5% 0;
+               top:0;
+               text-align: center;
+               width:100px;
+               border: none;
+               transition:none;
+               width: 100%;
+               border-radius: 10px;
+               
+           }
+
+        }
+
+        .login-link-btn:hover{
+            background-color: darken(@accent-purple, 20%);
+            .drop-shadow;
+            width:20.5%;
+
+            @media @phone{
+                background-color:none;
+                width: 100%;
+            }
+
+        }
+
+        
+    }
+    }
+}
