@@ -1,6 +1,5 @@
 .container{
  
-     
         .main-section{
         display: flex;
         flex-flow:row wrap;
@@ -29,11 +28,19 @@
                               width:50%;
                               order:2;
                               color: @jet;
-                              padding:2%;  
+                              padding:2%;
                               
                               @media @phone{
                                       width:100%;
                               }
+
+                              h2{
+
+                                  @media @phone{
+                                        font-size: 2.8rem;
+                                  }    
+                              }
+
                             
                               p{
                                 line-height: 1.5;
@@ -67,6 +74,7 @@
 
 
                    }
+
                    .divider{
                         width: 100%; 
                         border: 1px solid #3A405A;
@@ -80,12 +88,17 @@
                         width:100%;
                        
                     
-                             h1{
-
+                             h2{
                                 margin:10% 0;
+                                
+                                @media @phone{
+                                   font-size:2.6rem;
+                                }
                              }    
      
                         }
 
+                
         } 
+
 }

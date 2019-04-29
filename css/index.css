@@ -196,6 +196,40 @@ img {
   right: 0;
   z-index: -1;
 }
+.container .menu-button-wrapper {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 2%;
+  display: none;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width:500px) {
+  .container .menu-button-wrapper {
+    display: flex;
+  }
+}
+.container .menu-button-wrapper a {
+  text-decoration: none;
+}
+.container .menu-button-wrapper a .menu-button {
+  display: none;
+  margin-right: 12px;
+  border: 5px solid #73628A;
+  background-color: #7EB2DD;
+  color: #DCE6F7;
+  border-radius: 8px;
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .container .menu-button-wrapper a .menu-button {
+    display: flex;
+  }
+}
 .container .nav-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -205,9 +239,7 @@ img {
 }
 @media (max-width:500px) {
   .container .nav-wrapper {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    display: none;
   }
 }
 .container .nav-wrapper .nav-logo {
@@ -225,13 +257,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width:500px) {
-  .container .nav-wrapper .top-nav {
-    flex-flow: column wrap;
-    width: 100%;
-    margin: 2% auto;
-  }
 }
 .container .nav-wrapper .top-nav a {
   color: #DCE6F7;
@@ -273,11 +298,7 @@ img {
 }
 @media (max-width:500px) {
   .container .nav-wrapper .top-nav .login-link-btn {
-    position: relative;
-    padding: 5% 0;
-    top: 0;
     text-align: center;
-    width: 100px;
     border: none;
     transition: none;
     width: 100%;
@@ -293,6 +314,55 @@ img {
   .container .nav-wrapper .top-nav .login-link-btn:hover {
     background-color: none;
     width: 100%;
+  }
+}
+.container .mobile-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .mobile-menu .nav-logo {
+  color: #DCE6F7;
+}
+.container .mobile-menu .top-nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .container .mobile-menu .top-nav {
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 2% auto;
+  }
+}
+.container .mobile-menu .top-nav a {
+  color: #DCE6F7;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 2%;
+  margin-left: 8%;
+}
+@media (max-width:500px) {
+  .container .mobile-menu .top-nav a {
+    text-align: center;
+    width: 100%;
+    margin: 2px auto;
+    padding: 5% 0;
+    border-radius: 10px;
+    background-color: #73628A;
+  }
+}
+.container .mobile-menu .top-nav a:hover {
+  color: #ffffff;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+}
+@media (max-width:500px) {
+  .container .mobile-menu .top-nav a:hover {
+    background-color: #41384e;
   }
 }
 header {
@@ -434,6 +504,11 @@ header .header-content .header-img-wrapper img {
     width: 100%;
   }
 }
+@media (max-width:500px) {
+  .container .main-section .content-wrapper .inner-content-wrapper h2 {
+    font-size: 2.8rem;
+  }
+}
 .container .main-section .content-wrapper .inner-content-wrapper p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -470,8 +545,13 @@ header .header-content .header-img-wrapper img {
   align-items: center;
   width: 100%;
 }
-.container .main-section .chart-container h1 {
+.container .main-section .chart-container h2 {
   margin: 10% 0;
+}
+@media (max-width:500px) {
+  .container .main-section .chart-container h2 {
+    font-size: 2.6rem;
+  }
 }
 .container .main-section-about {
   margin: 10% auto 0 auto;
@@ -503,6 +583,16 @@ header .header-content .header-img-wrapper img {
 .container .main-section-about .card-wrapper .card-view img {
   width: 100%;
   height: 75%;
+}
+.container .main-section-about .card-wrapper .card-view h2 {
+  font-size: 2.4rem;
+}
+.container .main-section-about .card-wrapper .card-view h3 {
+  font-size: 2rem;
+}
+.container .main-section-about .card-wrapper .card-view a {
+  text-decoration: none;
+  font-size: 1.6rem;
 }
 .container .main-section-about .card-wrapper .card-view:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
