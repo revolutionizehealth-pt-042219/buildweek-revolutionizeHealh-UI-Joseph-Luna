@@ -305,6 +305,17 @@ img {
     border-radius: 10px;
   }
 }
+@media (max-width:800px) {
+  .container .nav-wrapper .top-nav .login-link-btn {
+    width: 15%;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .container .nav-wrapper .top-nav .login-link-btn {
+    width: 18%;
+  }
+}
 .container .nav-wrapper .top-nav .login-link-btn:hover {
   background-color: #41384e;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -314,6 +325,16 @@ img {
   .container .nav-wrapper .top-nav .login-link-btn:hover {
     background-color: none;
     width: 100%;
+  }
+}
+@media (max-width:800px) {
+  .container .nav-wrapper .top-nav .login-link-btn:hover {
+    width: 15.5%;
+  }
+}
+@media (max-width: 900px) {
+  .container .nav-wrapper .top-nav .login-link-btn:hover {
+    width: 18.5%;
   }
 }
 .container .mobile-menu {
@@ -366,9 +387,18 @@ img {
   }
 }
 header {
+  display: flex;
+  flex-flow: row wrap;
   width: 90%;
   margin: 0 auto;
   color: #DCE6F7;
+}
+@media (max-width:800px) {
+  header {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header h2 span {
   color: #73628A;
@@ -376,13 +406,22 @@ header h2 span {
   font-size: 3.5rem;
   font-weight: bolder;
 }
+@media (max-width:800px) {
+  header h2 {
+    text-align: center;
+  }
+}
 header p {
-  margin: 10px auto;
+  margin: 10px 0;
+}
+@media (max-width:800px) {
+  header p {
+    text-align: center;
+  }
 }
 header .header-content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
   width: 100%;
   margin: 0 auto;
 }
@@ -393,15 +432,28 @@ header .header-content {
     align-items: center;
   }
 }
+@media (max-width:800px) {
+  header .header-content {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header .header-content .cta-wrapper {
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-start;
   width: 50%;
 }
 @media (max-width:500px) {
   header .header-content .cta-wrapper {
     width: 100%;
     align-items: center;
+  }
+}
+@media (max-width:800px) {
+  header .header-content .cta-wrapper {
+    align-items: center;
+    width: 100%;
   }
 }
 header .header-content .cta-wrapper a {
@@ -411,7 +463,13 @@ header .header-content .cta-wrapper a {
   header .header-content .cta-wrapper a {
     display: flex;
     width: 100%;
+    justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width:800px) {
+  header .header-content .cta-wrapper a {
+    margin: 0 auto;
   }
 }
 header .header-content .cta-wrapper a .cta-button {
@@ -433,6 +491,12 @@ header .header-content .cta-wrapper a .cta-button {
     margin: 0 auto;
   }
 }
+@media (max-width:800px) {
+  header .header-content .cta-wrapper a .cta-button {
+    width: 300px;
+    margin: 5% auto;
+  }
+}
 header .header-content .cta-wrapper a .cta-button:hover {
   background-color: #41384e;
   box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.6);
@@ -449,6 +513,12 @@ header .header-content .header-img-wrapper {
     margin-top: 2%;
   }
 }
+@media (max-width:800px) {
+  header .header-content .header-img-wrapper {
+    justify-content: center;
+    margin: 2% auto;
+  }
+}
 header .header-content .header-img-wrapper img {
   width: 300px;
   height: 300px;
@@ -463,13 +533,44 @@ header .header-content .header-img-wrapper img {
   background-color: #3A405A;
   position: absolute;
   bottom: 0;
-  z-index: -3;
 }
 #bg-3 .footer-container p {
   color: #DCE6F7;
   position: absolute;
   bottom: 10px;
   left: 10%;
+}
+#bg-3 .footer-container .nav-wrapper-bottom {
+  position: absolute;
+  right: 5%;
+  bottom: 18%;
+  color: #DCE6F7;
+}
+@media (max-width:500px) {
+  #bg-3 .footer-container .nav-wrapper-bottom {
+    display: none;
+  }
+}
+#bg-3 .footer-container .nav-wrapper-bottom a {
+  color: #DCE6F7;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 2%;
+  margin-left: 8%;
+}
+@media (max-width:500px) {
+  #bg-3 .footer-container .nav-wrapper-bottom a {
+    text-align: center;
+  }
+}
+#bg-3 .footer-container .nav-wrapper-bottom a:hover {
+  color: #ffffff;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+}
+@media (max-width:500px) {
+  #bg-3 .footer-container .nav-wrapper-bottom a:hover {
+    background-color: #41384e;
+  }
 }
 .container .main-section {
   display: flex;
