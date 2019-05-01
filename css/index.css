@@ -533,13 +533,44 @@ header .header-content .header-img-wrapper img {
   background-color: #3A405A;
   position: absolute;
   bottom: 0;
-  z-index: -3;
 }
 #bg-3 .footer-container p {
   color: #DCE6F7;
   position: absolute;
   bottom: 10px;
   left: 10%;
+}
+#bg-3 .footer-container .nav-wrapper-bottom {
+  position: absolute;
+  right: 5%;
+  bottom: 18%;
+  color: #DCE6F7;
+}
+@media (max-width:500px) {
+  #bg-3 .footer-container .nav-wrapper-bottom {
+    display: none;
+  }
+}
+#bg-3 .footer-container .nav-wrapper-bottom a {
+  color: #DCE6F7;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 2%;
+  margin-left: 8%;
+}
+@media (max-width:500px) {
+  #bg-3 .footer-container .nav-wrapper-bottom a {
+    text-align: center;
+  }
+}
+#bg-3 .footer-container .nav-wrapper-bottom a:hover {
+  color: #ffffff;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+}
+@media (max-width:500px) {
+  #bg-3 .footer-container .nav-wrapper-bottom a:hover {
+    background-color: #41384e;
+  }
 }
 .container .main-section {
   display: flex;
