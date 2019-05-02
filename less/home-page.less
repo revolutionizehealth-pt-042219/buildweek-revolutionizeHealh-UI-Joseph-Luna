@@ -1,105 +1,109 @@
-.container{
-     
+.container {
 
-        .main-section{
-        display: flex;
-        flex-flow:row wrap;
-        width: 85%;
-        margin: 20% auto 10% auto;
 
-                 .content-wrapper{
-                 display: flex;
-                 flex-flow:row wrap;
-                 justify-content: center;
-                 align-items: center;
+        .main-section {
+                display: flex;
+                flex-flow: row wrap;
+                width: 85%;
+                margin: 20% auto 10% auto;
 
-                        @media @phone{
+                .content-wrapper {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media @phone {
                                 flex-flow: column wrap;
-                                width:100%;
-                        
-                        }
-
-                        .top-main-content{
-                                width:80%;
-                                margin:10% auto;
-                        }
-
-                        
-                        .inner-content-wrapper{
-                              width:50%;
-                              order:2;
-                              color: @jet;
-                              padding:2%;
-                              
-                              @media @phone{
-                                      width:100%;
-                              }
-
-                              h2{
-
-                                  @media @phone{
-                                        font-size: 2.8rem;
-                                  }    
-                              }
-
-                            
-                              p{
-                                line-height: 1.5;
-                                font-size:1.6rem;
-                               
-                              }
+                                width: 100%;
 
                         }
 
-                        .inner-content-img-wrapper{
-                                width:50%;
-                                order:1;
+                        .top-main-content {
+                                width: 80%;
+                                margin: 10% auto;
 
-                                @media @phone{
-                                        width:100%;
+                                p {
+                                        font-size: 1.9rem;
+                                }
+                        }
+
+
+                        .inner-content-wrapper {
+                                width: 50%;
+                                order: 2;
+                                color: @jet;
+                                padding: 2%;
+
+                                @media @phone {
+                                        width: 100%;
                                 }
 
-                              img{
+                                h2 {
+
+                                        @media @phone {
+                                                font-size: 2.8rem;
+                                        }
+                                }
+
+
+                                p {
+                                        line-height: 1.5;
+                                        font-size: 1.9rem;
+
+                                }
+
+                        }
+
+                        .inner-content-img-wrapper {
+                                width: 50%;
+                                order: 1;
+
+                                @media @phone {
+                                        width: 100%;
+                                }
+
+                                img {
                                         width: 550px;
-                                        height:550px;
+                                        height: 550px;
                                 }
                         }
 
-                        .inner-content-img-wrapper.reversed{
-                                order:2;
+                        .inner-content-img-wrapper.reversed {
+                                order: 2;
 
-                                @media @phone{
-                                        order:1;
+                                @media @phone {
+                                        order: 1;
                                 }
                         }
 
 
-                   }
+                }
 
-                   .divider{
-                        width: 100%; 
+                .divider {
+                        width: 100%;
                         border: 1px solid #3A405A;
                 }
 
-                   .chart-container{
-                        display:flex; 
-                        flex-flow:column wrap;
-                        justify-content:center; 
-                        align-items:center; 
-                        width:100%;
-                       
-                    
-                             h2{
-                                margin:10% 0;
-                                
-                                @media @phone{
-                                   font-size:2.6rem;
+                .chart-container {
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+
+                        h2 {
+                                margin: 10% 0;
+
+                                @media @phone {
+                                        font-size: 2.6rem;
                                 }
-                             }    
-     
                         }
 
-                
-        } 
+                }
+
+
+        }
 
 }

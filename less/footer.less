@@ -1,57 +1,57 @@
+#bg-3 {
+  -webkit-clip-path: polygon(52% 53%, 75% 53%, 100% 34%, 100% 100%, 70% 100%, 0 100%, 0 59%, 22% 72%);
+  clip-path: polygon(52% 53%, 75% 53%, 100% 34%, 100% 100%, 70% 100%, 0 100%, 0 59%, 22% 72%);
+  width: 100%;
+  height: 400px;
+  background-color: @darkest-blue;
+  position: absolute;
+  bottom: 0;
 
-  #bg-3{
-    -webkit-clip-path: polygon(52% 53%, 75% 53%, 100% 34%, 100% 100%, 70% 100%, 0 100%, 0 59%, 22% 72%);
-    clip-path: polygon(52% 53%, 75% 53%, 100% 34%, 100% 100%, 70% 100%, 0 100%, 0 59%, 22% 72%);
-    width:100%;
-    height:400px;
-    background-color: @darkest-blue;
-    position: absolute;
-    bottom:0;
-    
 
-    .footer-container{
-      
-      p{
-        color:@lightest-blue;
-        position: absolute;
-        bottom: 10px;
-        left:10%
+  .footer-container {
+
+    p {
+      color: @lightest-blue;
+      position: absolute;
+      bottom: 10px;
+      left: 10%
+    }
+
+
+    .nav-wrapper-bottom {
+      position: absolute;
+      right: 5%;
+      bottom: 18%;
+      color: @lightest-blue;
+
+      @media @phone {
+        display: none;
       }
-    
 
-    .nav-wrapper-bottom{
-      position:absolute;
-      right:5%;
-      bottom:18%;
-      color:@lightest-blue;
-      
-      @media @phone{
-        display:none;
-      }
-
-      a{
-        color:@lightest-blue;
+      a {
+        color: @lightest-blue;
         text-decoration: none;
-        font-size:2.0rem;    
+        font-size: 2.0rem;
         padding: 2%;
         margin-left: 8%;
 
         @media @phone {
-            text-align: center;
-            
+          text-align: center;
+
         }
-      
+
+      }
+
+      a:hover {
+        color: lighten(@lightest-blue, 100%);
+        text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+
+        @media @phone {
+          background-color: darken(@accent-purple, 20%);
+        }
+      }
+
     }
 
-    a:hover{
-      color: lighten(@lightest-blue, 100%);
-      text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
-      @media @phone{
-          background-color: darken(@accent-purple, 20%);
-      }
-  }
-     
-  }
-    
   }
 }
