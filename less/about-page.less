@@ -11,7 +11,7 @@
         align-items: center;
 
         .filter-button-wrapper{
-            width:100%;
+            width:70%;
             display:flex;
             justify-content: space-evenly;
             margin:5% auto;
@@ -21,12 +21,14 @@
             }
             
             .filter-button{
-                width:150px;
-                height:20px;
+                width:110px;
+                height:30px;
                 background-color: @accent-purple;
                 color:@lightest-blue;
                 font-size:1.6rem;
                 border-radius: 10px;
+                border:none;
+                .drop-shadow;
             }
 
             .filter-button:hover{
@@ -47,7 +49,7 @@
             line-height: 1.5;
 
             .card-view {
-                height: 465px;
+                height: 495px;
                 width: 400px;
                 border-radius: 8px;
                 box-shadow: 0px 8px 15px 0 rgba(0, 0, 0, 0.4);
@@ -55,10 +57,12 @@
                 background-color: white;
                 margin: 2% 2%;
                 transition: 0.3s;
+                text-align:center;
 
                 img {
                     width: 100%;
                     height: 75%;
+                    border-radius: 8px;
                 }
 
 
@@ -73,6 +77,12 @@
                 a {
                     text-decoration: none;
                     font-size: 1.6rem;
+
+                    .repo-image {
+                        width:45px;
+                        height:45px;
+                    }
+    
                 }
             }
 
